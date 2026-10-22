@@ -1,0 +1,10 @@
+{
+  "nome": "Fundição Fênix",
+  "fantasia": "Fênix",
+  "cnpj": "00.000.000/0001-00",
+  "endereco": "Av. I, 1015 - Distrito Industrial",
+  "cidade": "Rondonópolis-MT · CEP 78745-740",
+  "telefones": ["(66) 3421-1655", "(66) 99617-5002"],
+  "emails": ["administrativo@fundicaofenix.com.br", "vendas@fundicaofenix.com.br"],
+  "responsavelTecnico": { "nome": "Responsável Técnico (exemplo)", "registro": "CRQ 00000000" }
+}

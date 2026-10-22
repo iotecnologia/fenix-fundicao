@@ -1,0 +1,7 @@
+[
+  {"id":"u1","email":"diretoria@fenix.exemplo","nome":"Diretoria","perfil":"diretoria","cargo":"Diretor · Administrador","sal":"5de7ae084e98511cb1f5153b","hash":"2049abad31003902f4e4dbd88b7fa3e1fa12af1ca19d5d2512ce3fe78967bc41"},
+  {"id":"u2","email":"comercial@fenix.exemplo","nome":"Comercial","perfil":"comercial","cargo":"Vendas","sal":"47fe79021e2332b1f6b45bd2","hash":"fb8df955b814a06c9a6d539bd5821bd3405aee4e0e301a19f5274417088ef9f8"},
+  {"id":"u3","email":"producao@fenix.exemplo","nome":"Produção","perfil":"producao","cargo":"Encarregado de produção","sal":"799e999188b33f7f6d1959b8","hash":"61c46ada0b21364f8a73bb2aeebed426c54926d6616a0c84734134344b1433b7"},
+  {"id":"u4","email":"qualidade@fenix.exemplo","nome":"Qualidade","perfil":"qualidade","cargo":"Analista da qualidade","sal":"e732903ad7d498ca01d6b974","hash":"f2df0d9317cf94d2dfcb19cf13b0e73a0ac2acf820a96490e518b8a330ab6e61"},
+  {"id":"u5","email":"administrativo@fenix.exemplo","nome":"Administrativo","perfil":"administrativo","cargo":"Administrativo · Compras","sal":"a2de3c7a3d8dc6cdd5665dd2","hash":"d2ac75b726c476c273c3e4e1ea4c2776d1337dbdbb0acabb1f93d488eaeb531b"}
+]

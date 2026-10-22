@@ -1,0 +1,4 @@
+[
+  { "id": "f1", "nome": "Forno 1 · Indução 500 kg", "capacidadeKg": 500, "tipo": "Indução" },
+  { "id": "f2", "nome": "Forno 2 · Indução 1.000 kg", "capacidadeKg": 1000, "tipo": "Indução" }
+]

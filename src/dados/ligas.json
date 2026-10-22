@@ -1,0 +1,20 @@
+[
+  { "id": "gg15", "nome": "FoFo Cinzento GG15", "norma": "ASTM A48 Classe 20", "tipo": "cinzento",
+    "quimica": { "C": { "min": 3.50, "max": 3.70 }, "Si": { "min": 2.00, "max": 2.40 }, "Mn": { "min": 0.50, "max": 0.80 }, "P": { "max": 0.15 }, "S": { "max": 0.12 }, "Cu": { "max": 0.25 }, "Cr": { "max": 0.15 } },
+    "mecanica": { "dureza": { "min": 150, "max": 190 }, "resistencia": { "min": 15 } }, "temperatura": { "min": 1360, "max": 1440 }, "precoBaseKg": 16.2 },
+  { "id": "gg20", "nome": "FoFo Cinzento GG20", "norma": "ASTM A126 Classe B", "tipo": "cinzento",
+    "quimica": { "C": { "min": 3.35, "max": 3.55 }, "Si": { "min": 1.80, "max": 2.20 }, "Mn": { "min": 0.60, "max": 1.00 }, "P": { "max": 0.07 }, "S": { "max": 0.15 }, "Cr": { "max": 0.25 }, "Ni": { "max": 0.25 }, "Cu": { "max": 0.20 } },
+    "mecanica": { "dureza": { "min": 180, "max": 220 }, "resistencia": { "min": 20 } }, "temperatura": { "min": 1380, "max": 1450 }, "precoBaseKg": 17.4 },
+  { "id": "gg25", "nome": "FoFo Cinzento GG25", "norma": "ASTM A48 Classe 35", "tipo": "cinzento",
+    "quimica": { "C": { "min": 3.20, "max": 3.40 }, "Si": { "min": 1.70, "max": 2.10 }, "Mn": { "min": 0.60, "max": 0.90 }, "P": { "max": 0.10 }, "S": { "max": 0.10 }, "Cu": { "min": 0.30, "max": 0.60 }, "Cr": { "max": 0.25 } },
+    "mecanica": { "dureza": { "min": 190, "max": 240 }, "resistencia": { "min": 25 } }, "temperatura": { "min": 1390, "max": 1460 }, "precoBaseKg": 18.9 },
+  { "id": "ggg40", "nome": "FoFo Nodular GGG40", "norma": "ASTM A536 60-40-18", "tipo": "nodular",
+    "quimica": { "C": { "min": 3.40, "max": 3.80 }, "Si": { "min": 2.30, "max": 2.80 }, "Mn": { "max": 0.30 }, "P": { "max": 0.05 }, "S": { "max": 0.02 }, "Mg": { "min": 0.03, "max": 0.06 }, "Cu": { "max": 0.10 } },
+    "mecanica": { "dureza": { "min": 140, "max": 190 }, "resistencia": { "min": 42 }, "escoamento": { "min": 276 }, "alongamento": { "min": 18 } }, "temperatura": { "min": 1420, "max": 1500 }, "precoBaseKg": 21.9 },
+  { "id": "ggg50", "nome": "FoFo Nodular GGG50", "norma": "ASTM A536 65-45-12", "tipo": "nodular",
+    "quimica": { "C": { "min": 3.40, "max": 3.80 }, "Si": { "min": 2.20, "max": 2.70 }, "Mn": { "max": 0.40 }, "P": { "max": 0.05 }, "S": { "max": 0.02 }, "Mg": { "min": 0.03, "max": 0.06 }, "Cu": { "min": 0.20, "max": 0.50 } },
+    "mecanica": { "dureza": { "min": 170, "max": 230 }, "resistencia": { "min": 45 }, "escoamento": { "min": 310 }, "alongamento": { "min": 12 } }, "temperatura": { "min": 1420, "max": 1500 }, "precoBaseKg": 23.4 },
+  { "id": "fbcr", "nome": "FoFo Branco Alto Cromo", "norma": "ASTM A532 Classe III A", "tipo": "branco",
+    "quimica": { "C": { "min": 2.40, "max": 2.80 }, "Si": { "max": 1.00 }, "Mn": { "min": 0.50, "max": 1.00 }, "P": { "max": 0.08 }, "S": { "max": 0.06 }, "Cr": { "min": 25.0, "max": 28.0 } },
+    "mecanica": { "dureza": { "min": 450, "max": 600 } }, "temperatura": { "min": 1440, "max": 1520 }, "precoBaseKg": 31.5 }
+]

@@ -1,0 +1,16 @@
+[
+  {"id": "c1", "nome": "Agromáquinas Cerrado Ltda", "cnpj": "52.601.815/0001-20", "contato": "Sr. Marcos (Compras)", "telefone": "(66) 3474-1950", "cidade": "Rondonópolis-MT", "segmento": "Máquinas agrícolas"},
+  {"id": "c2", "nome": "Usina Vale do São Lourenço S/A", "cnpj": "83.016.613/0001-44", "contato": "Sra. Juliana (Suprimentos)", "telefone": "(65) 3411-7955", "cidade": "Jaciara-MT", "segmento": "Sucroenergético"},
+  {"id": "c3", "nome": "Mineração Serra Azul Ltda", "cnpj": "09.139.099/0001-81", "contato": "Sr. Reinaldo (Manutenção)", "telefone": "(65) 3450-1812", "cidade": "Poconé-MT", "segmento": "Mineração"},
+  {"id": "c4", "nome": "Bombas Hidromat Indústria", "cnpj": "30.824.628/0001-72", "contato": "Sra. Patrícia (Compras)", "telefone": "(65) 3415-6054", "cidade": "Cuiabá-MT", "segmento": "Bombas e válvulas"},
+  {"id": "c5", "nome": "Frigorífico Pantanal Alimentos", "cnpj": "82.199.351/0001-38", "contato": "Sr. Edson (Engenharia)", "telefone": "(66) 3470-2028", "cidade": "Rondonópolis-MT", "segmento": "Frigorífico"},
+  {"id": "c6", "nome": "Metalúrgica Araguaia", "cnpj": "90.937.865/0001-71", "contato": "Sr. Cláudio (Manutenção)", "telefone": "(66) 3459-8424", "cidade": "Primavera do Leste-MT", "segmento": "Metalurgia"},
+  {"id": "c7", "nome": "Cooperativa Agrícola Planalto", "cnpj": "54.323.194/0001-95", "contato": "Sra. Vânia (Compras)", "telefone": "(66) 3467-9111", "cidade": "Campo Verde-MT", "segmento": "Agronegócio"},
+  {"id": "c8", "nome": "Algodoeira Sul Mato-Grossense", "cnpj": "57.491.186/0001-46", "contato": "Sr. Marcos (Compras)", "telefone": "(66) 3421-6604", "cidade": "Rondonópolis-MT", "segmento": "Beneficiamento de algodão"},
+  {"id": "c9", "nome": "Britagem Pedra Forte Ltda", "cnpj": "27.601.895/0001-76", "contato": "Sra. Juliana (Suprimentos)", "telefone": "(66) 3443-6737", "cidade": "Rondonópolis-MT", "segmento": "Mineração"},
+  {"id": "c10", "nome": "Implementos Chapadão", "cnpj": "97.971.147/0001-60", "contato": "Sr. Reinaldo (Manutenção)", "telefone": "(67) 3489-2064", "cidade": "Chapadão do Sul-MS", "segmento": "Implementos agrícolas"},
+  {"id": "c11", "nome": "Esmagadora de Grãos Centro-Oeste", "cnpj": "04.974.650/0001-99", "contato": "Sra. Patrícia (Compras)", "telefone": "(66) 3459-6823", "cidade": "Rondonópolis-MT", "segmento": "Óleos vegetais"},
+  {"id": "c12", "nome": "Hidrelétrica Rio Correntes", "cnpj": "29.170.342/0001-31", "contato": "Sr. Edson (Engenharia)", "telefone": "(66) 3494-5056", "cidade": "Itiquira-MT", "segmento": "Energia"},
+  {"id": "c13", "nome": "Transportadora Rota 163", "cnpj": "66.712.768/0001-04", "contato": "Sr. Cláudio (Manutenção)", "telefone": "(66) 3435-3243", "cidade": "Rondonópolis-MT", "segmento": "Transporte (peças de reposição)"},
+  {"id": "c14", "nome": "Cerâmica Vermelha Itiquira", "cnpj": "68.465.632/0001-64", "contato": "Sra. Vânia (Compras)", "telefone": "(66) 3410-3887", "cidade": "Itiquira-MT", "segmento": "Cerâmica"}
+]

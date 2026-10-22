@@ -1,0 +1,156 @@
+/* ============================================================
+   fenix.css — peças próprias do sistema Fênix (registro, química, documentos).
+   Usa só as variáveis de base.css (tema claro/escuro automático).
+   ============================================================ */
+.sem-marg { margin-bottom: 0 !important; }
+.topo-sec { margin-top: 14px; }
+.peq { font-size: 12px; }
+table.tab td.mono { white-space: nowrap; }
+.centro { text-align: center !important; }
+.app a { color: var(--link); text-decoration: none; font-weight: 600; }
+.app a:hover { text-decoration: underline; }
+.origem { display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; color: var(--texto-suave); }
+.origem svg { width: 13px; height: 13px; }
+.tit-pagina p { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.busca-tipo { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: .4px; text-transform: uppercase; color: var(--destaque-2); background: var(--gelo); border-radius: 5px; padding: 1px 6px; margin-right: 8px; }
+.lat-item svg.i + .nm + svg.i { width: 14px; height: 14px; opacity: .55; }
+.contadores b em.var { font-style: normal; }
+.contadores.c4 b, .contadores.c6 b { white-space: nowrap; }
+
+/* ---------- progresso da O.P ---------- */
+.prog { display: flex; align-items: center; gap: 8px; min-width: 120px; }
+.prog-trilho { flex: 1; height: 7px; border-radius: 6px; background: var(--painel-2); overflow: hidden; }
+.prog-trilho i { display: block; height: 100%; background: var(--destaque-2); border-radius: 6px; }
+.prog-trilho i.cheio { background: var(--livre); }
+.prog small { font-size: 11.5px; color: var(--texto-suave); white-space: nowrap; }
+
+/* ---------- registro (ver / editar) ---------- */
+.reg-barra { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+.reg-cab { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; min-height: 24px; }
+.reg-acoes { display: flex; gap: 6px; margin-left: auto; }
+.reg-erro { margin-bottom: 12px; }
+.form-grade { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.form-grade.c3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.form-grade.c2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.cmp { display: grid; gap: 5px; font-size: 12px; font-weight: 600; color: var(--texto-suave); align-content: start; min-width: 0; }
+.cmp.c2, .chk-linha.c2 { grid-column: span 2; }
+.cmp.c3 { grid-column: span 3; }
+.cmp.c4 { grid-column: 1 / -1; }
+.app .cmp input, .app .cmp select, .app .cmp textarea { height: 40px; font-size: 13.5px; color: var(--texto); font-weight: 500; }
+.app .cmp textarea { height: auto; resize: vertical; font-family: inherit; }
+.app .cmp input:disabled, .app .cmp select:disabled, .app .cmp textarea:disabled { color: var(--texto); opacity: 1; -webkit-text-fill-color: var(--texto); }
+.reg-corpo.editando .cmp input:not(:disabled), .reg-corpo.editando .cmp select:not(:disabled), .reg-corpo.editando .cmp textarea:not(:disabled) { background: var(--painel); border-color: var(--destaque-2); }
+.inp-num { position: relative; }
+.inp-num.com-suf input { padding-right: 52px; }
+.inp-num em { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-style: normal; font-size: 11.5px; color: var(--texto-suave); pointer-events: none; }
+.tab-mini td .inp-num input, .tab-mini td > input, .tab-mini td > select { height: 32px; padding: 4px 8px; font-size: 13px; }
+.tab-mini td .inp-num input { text-align: right; min-width: 70px; }
+table.tab.tab-mini th { padding: 8px 12px; }
+table.tab.tab-mini td { padding: 7px 12px; }
+.rodape-bloco { display: flex; justify-content: space-between; gap: 10px; padding: 10px 14px; border-top: 1px solid var(--linha); font-size: 12.5px; color: var(--texto-suave); background: var(--th-fundo); }
+.rodape-bloco b { color: var(--texto); margin-left: 6px; }
+.resumo-linha { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-top: 14px; }
+.resumo-linha > div { border: 1px solid var(--linha); border-radius: 12px; padding: 10px 14px; display: grid; gap: 2px; background: var(--painel); }
+.resumo-linha span { font-size: 11px; font-weight: 700; color: var(--texto-suave); text-transform: uppercase; letter-spacing: .4px; }
+.resumo-linha b { font-size: 16px; font-variant-numeric: tabular-nums; }
+.resumo-linha b small { font-size: 12px; color: var(--texto-suave); font-weight: 600; }
+.resumo-linha.dentro { margin: 0; padding: 12px; }
+.rolagem { max-height: 260px; overflow: auto; }
+.rolagem-x { overflow-x: auto; }
+.sel-add { width: auto !important; height: 34px !important; font-size: 12.5px !important; padding: 4px 10px !important; max-width: 340px; }
+.lanc { border: 1.5px dashed var(--destaque-2); border-radius: 14px; padding: 14px; display: grid; gap: 12px; background: var(--hover); }
+.lanc > b { font-size: 14px; }
+.lanc .rodape-modal { padding-top: 10px; }
+.nota { display: flex; align-items: center; gap: 6px; }
+.nota svg { width: 14px; height: 14px; }
+
+/* ---------- química (ficha e certificado) ---------- */
+.quimica { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 8px; padding: 12px; }
+.quimica > div { border: 1px solid var(--linha); border-radius: 12px; padding: 8px 10px; display: grid; gap: 3px; }
+.quimica b { font-size: 15px; }
+.quimica small { font-size: 11px; color: var(--texto-suave); white-space: nowrap; }
+.quimica .inp-num input { height: 34px; padding: 4px 8px; font-size: 13.5px; }
+.quimica .val { font-size: 15px; font-weight: 700; }
+.quimica > div.ok { border-color: var(--livre-borda); background: var(--livre-bg); }
+.quimica > div.fora { border-color: var(--st-no-t); background: var(--st-no-bg); }
+.quimica > div.fora b, .quimica > div.fora .val { color: var(--st-no-t); }
+
+/* ---------- orçamento ---------- */
+.orc-grade { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 18px; align-items: start; }
+.orc-lado { background: var(--painel-2); border-radius: 14px; padding: 14px; display: grid; gap: 12px; position: sticky; top: 0; }
+.alvo { display: flex; align-items: center; gap: 8px; font-size: 12.5px; font-weight: 600; color: var(--texto-suave); flex-wrap: wrap; }
+.alvo .inp-num { width: 92px; }
+.alvo .inp-num input { height: 34px; }
+.quebra { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; font-size: 13px; }
+.quebra li { display: flex; justify-content: space-between; gap: 10px; padding: 6px 2px; border-bottom: 1px solid var(--linha); }
+.quebra li span { color: var(--texto-suave); }
+.quebra li.tot { border-bottom: 0; font-size: 14px; }
+.quebra li.tot span, .quebra li.tot b { color: var(--texto); font-weight: 800; }
+.quebra li.tot.baixa b, td.baixa { color: var(--st-at-t) !important; }
+.quebra li.tot.neg b, td.neg { color: var(--st-no-t) !important; }
+.orc-lado .total-orc { border-top: 1px solid var(--borda); padding: 12px 2px 0; }
+
+/* ---------- custo mensal ---------- */
+.custo-topo { display: grid; grid-template-columns: 340px 1fr; gap: 16px; margin-bottom: 16px; align-items: stretch; }
+.custo-kg { background: var(--destaque); color: var(--destaque-texto); border-radius: var(--raio); padding: 18px 20px; display: grid; gap: 4px; align-content: center; box-shadow: var(--sombra); }
+.custo-kg span { font-size: 12px; font-weight: 700; letter-spacing: .4px; text-transform: uppercase; opacity: .85; }
+.custo-kg b { font-size: 32px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.custo-kg small { font-size: 12px; opacity: .85; }
+.custo-kg em { font-style: normal; font-size: 11.5px; opacity: .75; margin-top: 4px; }
+.custo-topo .contadores { grid-template-columns: repeat(2, 1fr); align-content: stretch; }
+tr.linha-tot td { background: var(--th-fundo); font-weight: 700; }
+.aviso-validar { display: flex; gap: 12px; padding: 14px 16px; border-radius: var(--raio); border: 1px solid var(--st-at-t); background: var(--st-at-bg); color: var(--texto); font-size: 13px; line-height: 1.55; }
+.aviso-validar > svg { color: var(--st-at-t); margin-top: 2px; }
+.aviso-validar p { margin: 4px 0 0; }
+.aviso-validar em { font-style: normal; font-weight: 700; }
+
+/* ---------- usuários ---------- */
+.matriz td, .matriz th { white-space: nowrap; }
+.cel-ic { display: inline-flex; align-items: center; gap: 8px; }
+.cel-ic svg { color: var(--destaque-2); width: 16px; height: 16px; }
+.cel-pac small { font-weight: 500; }
+
+/* ---------- documento A4 (prévia e impressão) ---------- */
+.doc { background: #fff; color: #000; font-family: "Montserrat", Arial, sans-serif; font-size: 11px; line-height: 1.45; width: 210mm; min-height: 297mm; padding: 14mm 14mm 12mm; display: flex; flex-direction: column; }
+.doc-cab { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid #000; padding-bottom: 8px; font-size: 10px; }
+.doc-emp { font-size: 14px; letter-spacing: 1px; }
+.doc-num { text-align: right; }
+.doc-num span { font-size: 9.5px; }
+.doc-num div { font-size: 14px; }
+.doc-tit { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; text-align: center; margin: 14px 0 12px; }
+.doc-corpo { flex: 1; font-weight: 400; }
+.doc-pares { display: grid; gap: 4px 16px; margin: 0 0 10px; }
+.doc-pares.c2 { grid-template-columns: repeat(2, 1fr); } .doc-pares.c3 { grid-template-columns: repeat(3, 1fr); } .doc-pares.c4 { grid-template-columns: repeat(4, 1fr); }
+.doc-pares div { border-bottom: 1px solid #ccc; padding: 3px 0; }
+.doc-pares dt { font-size: 9px; text-transform: uppercase; letter-spacing: .3px; }
+.doc-pares dd { margin: 0; font-size: 11px; font-weight: 400; }
+.doc-sec { margin: 10px 0; }
+.doc-sec h2 { font-size: 11px; font-weight: 400; text-transform: uppercase; letter-spacing: .6px; border-bottom: 1px solid #000; padding-bottom: 3px; margin: 0 0 6px; }
+.doc-sec p { margin: 0 0 6px; }
+.doc-tab { width: 100%; border-collapse: collapse; font-size: 10.5px; margin-bottom: 6px; }
+.doc-tab th { text-align: left; font-weight: 700; border-bottom: 1px solid #000; padding: 3px 4px; background: none; color: #000; }
+.doc-tab td { border-bottom: 1px solid #ccc; padding: 3px 4px; font-weight: 400; color: #000; }
+.doc-tab .n { text-align: right; white-space: nowrap; }
+.doc-tab tr.doc-total td { border-top: 1px solid #000; border-bottom: 0; }
+.doc-nota { font-size: 10px; margin-top: 8px; }
+.doc-ass { display: flex; justify-content: space-around; gap: 24px; margin-top: 34px; }
+.doc-ass div { display: grid; justify-items: center; font-size: 10.5px; min-width: 200px; }
+.doc-ass span { width: 100%; border-top: 1px solid #000; margin-bottom: 4px; }
+.doc-ass small { font-size: 9.5px; }
+.doc-rod { border-top: 1px solid #000; padding-top: 6px; margin-top: 12px; font-size: 9.5px; text-align: center; }
+@media print {
+  @page { size: A4 portrait; margin: 0; }
+  .area-impressao .doc { width: 210mm; min-height: 297mm; }
+  .doc-tab tr { break-inside: avoid; }
+}
+
+@media (max-width: 1100px) {
+  .orc-grade, .custo-topo { grid-template-columns: 1fr; }
+  .orc-lado { position: static; }
+}
+@media (max-width: 760px) {
+  .form-grade, .form-grade.c3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cmp.c3 { grid-column: 1 / -1; }
+  .reg-acoes { margin-left: 0; }
+  .prog { min-width: 90px; }
+}
