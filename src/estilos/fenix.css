@@ -152,30 +152,31 @@ tr.linha-tot td { background: var(--th-fundo); font-weight: 700; }
   .form-grade, .form-grade.c3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cmp.c3 { grid-column: 1 / -1; }
   .reg-acoes { margin-left: 0; }
+  .conteudo table.tab td.mono { font-size: 12px; }
   .prog { min-width: 90px; }
 }
 
-/* ---------- tabelas: nunca cortar a última coluna ---------- */
-/* célula mais compacta que o padrão (18px de lado) para caber mais colunas */
-.conteudo table.tab th { padding: 10px 12px; }
-.conteudo table.tab td { padding: 10px 12px; }
-.conteudo table.tab th:first-child, .conteudo table.tab td:first-child { padding-left: 18px; }
-.conteudo table.tab th:last-child, .conteudo table.tab td:last-child { padding-right: 18px; }
-/* se mesmo assim não couber, o bloco rola para o lado em vez de esconder o final */
+/* ---------- tabelas: caber sem cortar a última coluna ---------- */
+/* Layout igual (menu, painel lateral e posições não mudam): só o tamanho da tabela se ajusta. */
+.conteudo table.tab th { padding: 10px 10px; white-space: normal; line-height: 1.25; }
+.conteudo table.tab td { padding: 10px 10px; }
+.conteudo table.tab th:first-child, .conteudo table.tab td:first-child { padding-left: 16px; }
+.conteudo table.tab th:last-child, .conteudo table.tab td:last-child { padding-right: 16px; }
+/* painel lateral continua à direita; só fica mais estreito em telas menores (340px nas grandes) */
+.conteudo .grade2 { grid-template-columns: minmax(0, 1fr) clamp(250px, 22vw, 340px); }
+/* segurança: se ainda faltar espaço, rola para o lado em vez de esconder o final */
 .conteudo .bloco { overflow-x: auto; }
-/* painel lateral (gráficos / para fazer) mais estreito; abaixo de 1440px desce para baixo da tabela */
-.conteudo .grade2 { grid-template-columns: minmax(0, 1fr) 300px; }
-@media (max-width: 1440px) { .conteudo .grade2 { grid-template-columns: minmax(0, 1fr); } }
-/* telas estreitas (notebook com zoom, 1100–1280px): tabela mais compacta */
-@media (max-width: 1280px) {
+@media (max-width: 1440px) {
   .conteudo table.tab { font-size: 12.5px; }
   .conteudo table.tab th { font-size: 10.5px; letter-spacing: .3px; }
-  .conteudo table.tab th, .conteudo table.tab td { padding-left: 8px; padding-right: 8px; }
-  .conteudo table.tab th:first-child, .conteudo table.tab td:first-child { padding-left: 14px; }
-  .conteudo table.tab th:last-child, .conteudo table.tab td:last-child { padding-right: 14px; }
-  .lateral { width: 216px; }
-  .marca b { letter-spacing: 1.2px; font-size: 14px; white-space: nowrap; }
-  .app { grid-template-columns: 216px 1fr; }
-  .conteudo { padding: 20px 20px; }
-  .prog { min-width: 96px; }
+  .conteudo table.tab th, .conteudo table.tab td { padding-left: 6px; padding-right: 6px; }
+  .conteudo table.tab th:first-child, .conteudo table.tab td:first-child { padding-left: 12px; }
+  .conteudo table.tab th:last-child, .conteudo table.tab td:last-child { padding-right: 12px; }
+  .prog { min-width: 90px; }
+}
+@media (max-width: 1280px) {
+  .conteudo table.tab { font-size: 12px; }
+  .conteudo table.tab th { font-size: 10px; letter-spacing: .2px; }
+  .conteudo table.tab th, .conteudo table.tab td { padding-left: 5px; padding-right: 5px; }
+  .conteudo table.tab td.mono { font-size: 11.5px; letter-spacing: -.2px; }
 }
