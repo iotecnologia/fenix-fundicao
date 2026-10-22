@@ -117,7 +117,7 @@ function RegistroOrc({ orc, fechar }: { orc?: Orcamento; fechar: () => void }) {
       acoesExtra={!novo && r.status === 'aprovado' && opsGeradas.length === 0 && <BotaoIcone icone="lista" titulo="Gerar as O.P deste orçamento (uma por item)" cls="verde" disabled={!editaOP || editando} onClick={gerarOPs} />}>
       <div className="orc-grade">
         <div>
-          <div className="form-grade">
+          <div className="form-grade orc-cab">
             <Campo rot="Orçamento nº"><input value={r.numero} disabled /></Campo>
             <Campo rot="Data"><input type="date" value={r.data} disabled={ed} onChange={(e) => mudar('data', e.target.value)} /></Campo>
             <Campo rot="Situação" c={2}><select value={r.status} disabled={ed} onChange={(e) => mudar('status', e.target.value as Orcamento['status'])}>{Object.entries(STATUS_ORC).map(([k, v]) => <option key={k} value={k}>{v.nome}</option>)}</select></Campo>
