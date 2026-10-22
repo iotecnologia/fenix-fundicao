@@ -154,3 +154,28 @@ tr.linha-tot td { background: var(--th-fundo); font-weight: 700; }
   .reg-acoes { margin-left: 0; }
   .prog { min-width: 90px; }
 }
+
+/* ---------- tabelas: nunca cortar a última coluna ---------- */
+/* célula mais compacta que o padrão (18px de lado) para caber mais colunas */
+.conteudo table.tab th { padding: 10px 12px; }
+.conteudo table.tab td { padding: 10px 12px; }
+.conteudo table.tab th:first-child, .conteudo table.tab td:first-child { padding-left: 18px; }
+.conteudo table.tab th:last-child, .conteudo table.tab td:last-child { padding-right: 18px; }
+/* se mesmo assim não couber, o bloco rola para o lado em vez de esconder o final */
+.conteudo .bloco { overflow-x: auto; }
+/* painel lateral (gráficos / para fazer) mais estreito; abaixo de 1440px desce para baixo da tabela */
+.conteudo .grade2 { grid-template-columns: minmax(0, 1fr) 300px; }
+@media (max-width: 1440px) { .conteudo .grade2 { grid-template-columns: minmax(0, 1fr); } }
+/* telas estreitas (notebook com zoom, 1100–1280px): tabela mais compacta */
+@media (max-width: 1280px) {
+  .conteudo table.tab { font-size: 12.5px; }
+  .conteudo table.tab th { font-size: 10.5px; letter-spacing: .3px; }
+  .conteudo table.tab th, .conteudo table.tab td { padding-left: 8px; padding-right: 8px; }
+  .conteudo table.tab th:first-child, .conteudo table.tab td:first-child { padding-left: 14px; }
+  .conteudo table.tab th:last-child, .conteudo table.tab td:last-child { padding-right: 14px; }
+  .lateral { width: 216px; }
+  .marca b { letter-spacing: 1.2px; font-size: 14px; white-space: nowrap; }
+  .app { grid-template-columns: 216px 1fr; }
+  .conteudo { padding: 20px 20px; }
+  .prog { min-width: 96px; }
+}
